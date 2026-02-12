@@ -74,7 +74,7 @@ function trampoline(fn) {
   while (typeof result === 'function') {
     result = result();
   }
-  return result;
+  return result; 
 }
 
 // Step 2: Write your recursive function so it returns
