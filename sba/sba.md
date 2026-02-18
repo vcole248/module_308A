@@ -23,9 +23,7 @@ This assessment measures your capability to implement advanced JavaScript tools 
 
 ---
 
-## Submission
 
-Submit the link to your completed assessment using the **Start Assignment** button on the Assignment page in Canvas.
 
 ---
 

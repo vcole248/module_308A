@@ -1,0 +1,80 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>SmarTax | Stress-Free Tax Learning</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Hero Section -->
+    <header class="hero">
+      <p class="eyebrow">SmarTax</p>
+      <h1>Learn taxes one clear step at a time.</h1>
+      <p class="subtitle">
+        Search helpful tax articles, save your draft questions, and update them whenever you need.
+      </p>
+    </header>
+
+    <main class="layout">
+      <!-- Article Search Section -->
+      <section class="card">
+        <h2>Find Tax Articles</h2>
+
+        <form id="search-form" class="inline-form" aria-label="Search articles">
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Try keywords like: deductions, filing, refund"
+            aria-label="Search keywords"
+          />
+          <button type="submit">Search</button>
+        </form>
+
+        <div class="pager" aria-label="Pagination controls">
+          <button id="prev-btn" type="button" aria-label="Previous page">Previous</button>
+          <p id="page-label" aria-live="polite">Page 1</p>
+          <button id="next-btn" type="button" aria-label="Next page">Next</button>
+        </div>
+
+        <p id="feed-status" class="status" aria-live="polite">Loading tax articles...</p>
+        <div id="results" class="grid" aria-live="polite"></div>
+      </section>
+
+      <!-- Create Draft Section -->
+      <section class="card">
+        <h2>Create a Tax Question Draft (POST)</h2>
+
+        <form id="create-form" class="stack-form" aria-label="Create draft">
+          <label for="create-title">Title</label>
+          <input id="create-title" type="text" required placeholder="e.g., Can I deduct home office expenses?" />
+
+          <label for="create-body">Details</label>
+          <textarea id="create-body" required placeholder="Describe your situation and what you've tried."></textarea>
+
+          <button type="submit">Save Draft</button>
+        </form>
+        <p id="create-status" class="status" aria-live="polite"></p>
+      </section>
+
+      <!-- Update Draft Section -->
+      <section class="card">
+        <h2>Update Draft #1 (PATCH)</h2>
+
+        <form id="update-form" class="stack-form" aria-label="Update draft 1">
+          <label for="update-title">New Title</label>
+          <input id="update-title" type="text" required placeholder="New title for Draft #1" />
+
+          <button type="submit">Update Title</button>
+        </form>
+        <p id="update-status" class="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
